@@ -1,0 +1,251 @@
+/***********************************************************
+************************************************************
+Table of contents. 
+************************************************************
+***********************************************************/
+
+/***********************************
+COLORS
+
+Palette
+#000000  - black
+#ff0000 - red
+#ffffff  - white
+
+Colors applied
+#000000  - black - Body text - Navigation - Footer
+##ff6600 - orange - Header - Active Links - Footer Links on Hover - Blockquote Border
+#ffffff  - white - Body Background - Header H1, H2, H3 - Nav and Footer Links
+***********************************/
+
+/***********************************
+LINKS
+
+Nav and header
+a (standard):	#ffffff - white (text decoration none)
+a (hover):		#ffffff - white (text decoration: underline)
+
+Body text
+a (standard):	#ff6600 - orange
+a (hover):		#ff6600 - orange - #000000 - black (text decoration: underline
+
+Footer
+a (standard):	#ffffff - white (text decoration none)
+a (hover):		#ff6600 - orange
+***********************************/
+
+/******************************************
+FONTS
+
+Sans-serif / serif combination   Spectral and Karla
+font-family: 'Spectral', serif; 400, 700
+font-family: 'Karla', sans-serif; 400, 700
+
+Pairings, weights and sizes
+- Header h1 (headline): Spectral, sans-serif; font-style: normal; font-size: 86px; font-weight: 700; line-height: 1.5;
+- Header h2 (above headline): 'Karla', serif; font-style: normal; font-size: 42px; font-weight: 700; line-height: 1.3;
+- Header h3 (byline): Roboto, sans-serif; font-size: 18px; font-weight: 400;
+- Body text: 'Noto serif', serif; font-size: 16px; font-weight: 400; line-height: 1.5;
+- Blockquotes: Roboto, sans-serif; font-size: 24px; font-weight: inherit; line-height: inherit;
+- Figcaptions: Roboto, sans-serif; font-size: inherits; font-weight: inherit; line-height: 1.1;
+********************************************/
+
+/******************************************************
+TABLE OF CONTENTS
+1. Global styles (things that apply to all elements of site: general display, general margin, general font)
+2. Header & Nav (specific to header and nav)
+3. Main body Content (headings, images and figures, blockquotes)
+4. Twitter embed codes
+5. Footer Content
+6. Media Queries
+******************************************************/
+
+
+/******************************************************
+*******************************************************
+1. Global styles
+(things that apply to all elements of site)
+*******************************************************
+******************************************************/
+
+/*Make everything inside the <html> act as a block.
+box-sizing: used to tell the browser what the sizing properties (width and height) should include.
+border-box: The width and height properties (and min/max properties) includes content, padding and border, but not the margin */
+
+html {
+  box-sizing: border-box;
+}
+
+/* The asterisk * used below means wildcard or affect everything.
+box-sizing: inherit, means inherit the property border-box from its parent element html.
+Check what the pseudo elements :before and :after are for https://www.w3schools.com/CSS/css_pseudo_elements.asp */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #0f1a26;
+  margin: 0px;
+  font-family: 'Karla', sans-serif;
+}
+
+/* navigation styles */
+nav {
+  text-align: left;
+  padding: 5px 0px 10px 20px; /* Top, right, bottom, left */
+  width: 100%; /*Make navigation 100% width of the viewport*/
+}
+
+/*Nav list of links aligned horizontal*/
+nav ul li {
+  display: inline;
+  /* Display: Every HTML element has a default value for display.
+    Usually it's either "block" or "inline". Info: http://marksheet.io/html-block-inline.html
+    Examples: https://www.w3schools.com/css/css_display_visibility.asp */
+  padding: 5px 5px 5px 10px;
+  /*top right bottom left or give it 0px of top space, 10 px to
+    the right, 0px to the bottom and 10px to the left. To remember it, this rule is also called
+    TRouBLE or TRBL for Top Right Bottom Left*/
+}
+
+/*links in nav menu*/
+nav ul li a {
+  color: #dde5ff;/*white greyish*/
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase; /*make all links uppercase*/
+}
+
+/*links in nav on hover*/
+nav ul li a:hover {
+  color: #ff3333;
+  text-decoration: underline;
+  text-decoration-color: #ff3333;
+}
+
+
+/* #basicbio {} section 1 with my name and short bio */
+
+
+h1 {
+	color: #ffffff;
+	font-family: 'Spectral', serif;
+  font-style: normal;
+	font-size: 120px;
+  font-weight: 700;
+	line-height: 132px;
+  padding: 5px 0px 10px 56px;
+	position: relative;
+	text-align: left;
+}
+
+
+#landing-dek {
+  color: #ffffff;
+  font-family: 'Karla', sans-serif;
+  font-size: 32px;
+  float: left;
+  line-height: 48px;
+  margin-bottom: 48px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 620px;
+}
+
+/* DEACTIVATE
+h2 {
+	color: #ff3333;
+	font-family: 'Karla', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+	font-size: 36px;
+	line-height: 1.3;
+  padding: 0px 0px 5px 40px;
+	position: relative;
+	text-align: left;
+  text-transform: uppercase;
+
+h3 {
+	color: #15171b;
+	font-family: 'Karla', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+	font-size: 28px;
+	line-height: 1.5;
+	margin: 0 0 72px -10px;
+	position: relative;
+	text-align: center;
+  text-transform: uppercase;
+}
+
+*/
+
+/* p {
+  color: #ffffff;
+  font-family: 'Karla', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  float: right;
+  line-height: 48px;
+  margin-bottom: 48px;
+  width: 500px;
+}
+*/
+
+
+#thingsido {
+  background-color: #ffffff; /* reddish color */
+  /* If you wanted you could add a background-image. For this you can type, before background-color the property and value background-image:url("insert here th url of the image");  */
+  background-size: cover; /* Means cover the entire element. Examples
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
+/* section 2 with short list of projects */
+
+
+/* #aboutme-projects unordered list with id */
+
+/* #aboutme-projects-ol   ordered list with id */
+
+/* #thingsilove  section 3 with 3 things I love doing */
+
+/* #aboutme-love ordered list with id  */
+
+/* footer
+
+#aboutme-footer /* unordered list with id in footer */
+
+/* #license /* paragraph with id for license information */
+
+
+
+
+  p {
+  	color: #fff;
+  	font-family: 'Roboto';
+  	font-size: 32px;
+  	float: right;
+  	line-height: 48px;
+  	margin-bottom: 48px;
+  	width: 500px;
+  }
+
+  a {
+  	color: #48222F;
+    font-size: 16px;
+  	font-family: 'Vollkorn', serif;
+  	font-style: italic;
+  	font-weight: 400;
+  	float: left;
+  	line-height: 24px;
+  	margin-bottom: 48px;
+  	margin-top: 20px;
+  	text-align: right;
+  	text-decoration: none;
+  	width: 240px;
+  }
+
+  a:hover {
+  	color: #fff;
+  }

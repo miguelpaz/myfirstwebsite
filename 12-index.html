@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <!-- Head content is invisible to those who view your page -->
+  <title>Hi, I am your Instructor</title>
+  <!-- Metadata -->
+  <meta charset="utf-8"><!-- characters encoding -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"><!-- Tells Internet Explorer how to behave in regards to the value you set (IE=edge for Internet Explorer Edge, etc) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport means size of device screen, width=device-width tells the browser to set the width of the content to the width of the screen (viewport) of the device itself. initial-scale=1.0 tells the browser to scale that content to 1 on load. Without this parameter, responsive sites won't work -->
+  <meta name="author" content="Miguel Paz">
+  <meta name="description" content="An example landing page">
+  <meta name="keywords" content="html, html5, ids, classes, css, layouts, fonts, colors">
+  <!-- Meta data for Facebook  -->
+  <meta property="og:site_name" content="https://miguelpaz.github.io/myfirstwebsite/">
+  <!-- add website domain name -->
+  <meta property="og:title" content="Example landing page">
+  <!-- add story title -->
+  <meta property="og:longTitle" content="A landing page made with basic html and css">
+  <!-- add a longer story title -->
+  <meta property="og:image" content="...">
+  <!-- add url or path to image you want people to see on Facebook when you share the ling to this story -->
+  <meta property="og:description" content="HTML/CSS example for a course I teach">
+  <!-- add a short summary or lead you want people to see on Facebook when you share the ling to this story -->
+  <meta property="og:url" content="https://miguelpaz.github.io/myfirstwebsite/">
+  <!-- add the webpage url -->
+  <meta property="og:type" content="article">
+  <!-- type of content: it's an article -->
+  <!-- Twitter meta data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@miguelpaz">
+  <!-- add your twitter handle like @yourname or https://twitter.com/yourname -->
+
+  <!-- CSS Styles. This is where you add the links to your stylesheets.
+NORMALIZE.CSS>>	<link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
+  <link href="css/12-index-styles.css" rel="stylesheet" type="text/css">
+  <!-- Font pairing: Spectral and Karla -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:400,700" rel="stylesheet">
+  <!-- Font awesome, so you can use free icons. How to do it https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="wrapper"><!-- RULER OF ALL!!!!! $$$$$$$$$ EXPLAIN LATER -->
+
+  <!-- Navigation menu links in white uppercase and background black -->
+  <nav>
+    <ul>
+      <li><a href="#">Miguel Paz</a></li>
+      <li><a href="#">Story 1</a></li>
+      <li><a href="#">Story 2</a></li>
+      <li><a href="#">Story 3</a></li>
+    </ul>
+  </nav>
+
+  <header><!-- Header is a HTML5 semantic tag. You can use it as a container for your headline and summary -->
+    <h1>Hi! I am your <br>instructor</h1>
+    <p id="landing-dek">I am a Chilean journalist living and working in New York as a data journalism professor at the <a href="https://journalism.cuny.edu" target="_blank">Craig Newmark Graduate School of Journalism at CUNY</a>. Right now, I am teaching you "Fundamentals of Interactive & Data Journalism"</p>
+  </header>
+
+
+
+
+  <section id="aboutme-projects">
+    <h3>A little more about me</h3>
+      <ul>
+        <li>I founded <a href="www.poderopedia.org" target="_blank">Poderopedia</a>, a site that maps who is who in business and politics in Latin America, and I previously worked in many news organizations in Chile.</li>
+        <li>Was a <a href="https://nieman.harvard.edu/news/2014/06/2015-nieman-berkman-fellows-named/" target="_blank">Nieman Berkman fellow</a> at Harvard (2014-2015) and a <a href="https://www.icfj.org/our-work/knight/profiles/miguel-paz" target="_blank">Knight International Journalism fellow</a> at ICFJ (2013-2014).</li>
+        <li>A few things I've worked in:
+            <ol>
+              <li>The <a href="http://manual.periodismodedatos.org" target="_blank">Ibero American Data Journalism Handbook</a>.</li>
+              <li>Map of Media and Media Ownership of Chile and Colombia.</li>
+              <li><a href="https://narcodata.animalpolitico.com/" target="_blank">NarcoData</a>, <i>Animal Político, México</i>.</li>
+              <li><a href="http://chequeado.com/justiciapedia/">Justiciapedia</a>, <i>Chequeado, Argentina</i>.</li>
+              <li><a href="http://endata.prdecide.elnuevodia.com/">EnData</a>, <i>El Nuevo Día, Puerto Rico</i>.</li>
+              <li>Dozens of workshops for reporters in 3 continents.</li>
+            </ol>
+        </li>
+      </ul>
+  </section>
+
+  <section id="aboutme-love">
+
+    <h3>Three things I love</h3>
+      <ol>
+        <li>Making barbecues for friends</li>
+        <li>Reading, reporting and writing</li>
+        <li>Helping you get new superpowers for your reporter toolbox</li>
+      </ol>
+</section>
+
+
+<footer>
+
+<h4>Where to find me</h4>
+
+        <ul id="aboutme-footer-links">
+          <li><i class="fas fa-map-marker-alt"><a href="https://goo.gl/maps/JfWQRczaU992" alt="Office 421A, 219 W40 St, New York"></a></i>
+          <li><i class="fas fa-envelope"><a href="mailto:miguel.paz@journalism.cuny.edu" alt="Email me"></a></i></li>
+          <li><i class="fab fa-github"><a href="https://github.com/miguelpaz" alt="My Github"></a></i>
+          <li><i class="fab fa-twitter"><a href="https://twitter.com/miguelpaz" alt="Follow me"></a></i>
+        </ul>
+
+<p id="license">© 2018 Your instructor. Under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+
+</footer>
+
+</div>
+
+</body>
+
+
+</html>

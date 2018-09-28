@@ -1,0 +1,12 @@
+#unique {
+  color: blue;
+}
+
+.odd {
+  color: hotpink;
+}
+
+.even {
+  color: orange;
+  text-transform: uppercase;
+}

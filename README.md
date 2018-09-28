@@ -1,7 +1,7 @@
 # myfirstwebsite
 Intro to HTML/CSS - Fall 18 class exercises
 
-### HTML Files
+### HTML Files (will be modifying and updating, check commits)
 
 
 - [00-rawtext.html](00-rawtext.html)

@@ -1,0 +1,141 @@
+/*
+START FROM SCRATCH, THEN PRINT IT IN PAPER AND MAKE THEM FOLLOW YOU DOING IT.
+PUT THE FINISHED DOC IN 10-2-styles.css and in 10-2-htmlwithcss.html.
+Then copy and paste for story1.html and rename main.css for styles.css and paste it there.
+For floats add the two images and one aside element and floats inside the footer.
+Based on http://jsfiddle.net/miguelpaz/f6m5khcc/12
+
+
+IN CSS You can add commens. Like this. You write CSS by adding a
+selector { property: value;
+}
+In this example you can see how you can define:
+1. Fonts to use, font size, font weight, line height,
+text alignment, text decoration, text decoration color
+2. Color for the Fonts and background color
+3. Padding, margin, borders
+4. Use classses and pseudo classes like a:hover
+*/
+
+/******************************************************
+*******************************************************
+1. THIS IS A GLOBAL STYLE.
+All the fonts inside the body will follow this rule.
+Unless you override it with a more specific rule, like
+the specific rules I gave for h1, h2, and others.
+*******************************************************
+******************************************************/
+
+body {
+  font-family: 'Libre Baskerville', sans-serif; /* font */
+  font-size: 16px; /* 16px is the standard font size */
+  color: black; /* font color black */
+  line-height: 1.5; /* 1.5 times the size of the font, defines
+  how much space between lines of text */
+  text-align: left; /* align all text to the left*/
+}
+
+h1, h2, b, p, figure, figcaption { padding: 0px 20px 0px 20px;/* How much space around the block element box I want to give it. The rule is each value stands for Top, Right, Bottom, Left, in that order */
+}
+
+/******************************************************
+*******************************************************
+2. Styles for headline, dek and byline
+*******************************************************
+******************************************************/
+
+/*headline h1*/
+h1 {
+  background-color: orange; /*orange*/
+  color: white; /* white */
+  font-family: 'Roboto', serif;
+  font-size: 56px; /* define how big is the font size */
+  font-weight: 700; /* weight means how bold. 300 is thing, 400 is normal, 700 is bold */
+  line-height: 1.2; /* how much space between lines of text */
+
+}
+
+/*headline h2 dek*/
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*byline*/
+b {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/******************************************************
+*******************************************************
+3. Styles for links, blockquote, paragraph "different"
+that uses a class
+*******************************************************
+******************************************************/
+
+/*links*/
+
+a {
+  color: #ff6600;/*orange*/
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;/*when cursor is over the link show the link with underline*/
+  text-decoration-color: #000000;/*black for the underline*/
+}
+
+
+/*blockquote*/
+
+blockquote {
+  border-top: 6px solid #ff6600;/*orange top border line of 6px*/
+  border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+
+/* Different paragraph. The paragraph that we want to look different is given a class and a name for the class. In this case we wrote in the html that this special <p> is <p class="different">
+Classes in CSS start with a period. Like period different or .different */
+.different {
+  color: white;
+  background-color: black;
+  font-family: 'Kalam', cursive;
+  font-size: 42px;
+}
+
+/******************************************************
+*******************************************************
+4. Styles for figure, figcation and images
+*******************************************************
+******************************************************/
+
+/*figure*/
+
+figure {
+  display: block;/* in this way it fills the width of the parent element body */
+  margin: 0px;/* no margin to avoid extra space around the element */
+}
+
+img {
+  border-radius: 50%; /* make the image round */
+}
+
+/*figcaption inherits font size from global styles*/
+figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  padding: 2px;/* give it padding all around*/
+}
